@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Formulario de Freelancer</legend>
+            <div id="coluna-principal">
+                <div id="coluna1">
+                    <label for="inome">Nome<span>*</span></label>
+                    <label for="isobrenome">Sobrenome<span>*</span></label>
+                    <label for="itelefone">Telefone<span>*</span></label>
+                    <label for="iemail">E-mail<span>*</span></label>
+                    <label id="lmensagem" for="imensagem">Mensagem<span>*</span></label>
+                    <label for="ilingua">Lingua</label>
+                    <label for="iprototipo">Prototipo<br>(Requisitos)</label>
+                    <label id="llinguagem" for="ilinguagem">As linguagens que voce prefere?</label>
+                    <label for="idb">Banco de Dados</label>
+                    <label for="iturno">Turno para Reunioes<span>*</span></label>
+                    <label for="ihorario">Horario Sugerido</label>
+                    <label for="ientrega">Data Prevista Entrega<span>*</span></label>
+                </div>
+                <div id="coluna2">
+                    <input type="text" name="nome" id="inome" placeholder="Insira seu nome" required>
+                    <input type="text" name="sobrenome" id="isobrenome" placeholder="Insira seu sobrenome" required>
+                    <input type="text" name="telefone" id="itelefone" placeholder="Insira seu telefone" required>
+                    <input type="text" name="email" id="iemail" placeholder="Insira seu E-mail" required>
+                    <input type="text" name="mensagem" id="imensagem" placeholder="Insira a Mensagem" required>
+                    <select name="lingua" id="ilingua">
+                        <option value="">portugues (pt-br)</option>
+                        <option value="">ingles (en-us)</option>
+                    </select>
+                    <input type="file" name="prototipo" id="iprototipo">
+                    <span>
+                        <select name="linguagem" id="ilinguagem" size="4" multiple>
+                            <option value="">Javascript</option>
+                            <option value="">C#</option>
+                            <option value="">Java</option>
+                            <option value="">PHP</option>
+                            <option value="">Python</option>
+                        </select>
+                        <label id="llinguagem" for="ilinguagem">(Para fazer varias escolhas, matenha a tecla CTRL pressionada)</label>
+                    </span>
+                    <span id="radiospan">
+                        <label for="imysql">Mysql<input type="radio" name="db" class="radio" id="imysql">|</label>
+                        <label for="ipostgresql">Postgresql<input type="radio" name="db" class="radio"
+                                id="ipostgresql">|</label>
+                        <label for="imongoDB">MongoDB<input type="radio" name="db" class="radio" id="imongoDB">|</label>
+                        <label for="ina">N/A<input type="radio" name="db" class="radio" id="ina">|</label>
+                        <label for="ioutro">Outro<input type="radio" name="db" class="radio" id="ioutro"></label>
+                    </span>
+                    <span id="checkboxspan">
+                        <input class="cb" type="checkbox" name="turno" id="imanha">
+                        <label for="imanha">Manha |
+                        </label>
+                        <input class="cb" type="checkbox" name="turno" id="itarde">
+                        <label for="itarde">Tarde |</label>
+                        <input class="cb" type="checkbox" name="turno" id="inoite">
+                        <label for="inoite">Noite</label>
+                    </span>
+                    <input type="time" name="horario" id="ihorario">
+                    <input required type="date" name="entrega" id="ientrega">
+                </div>
+            </div>
+            <div id="coluna-extra">
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+                <div id="coluna-extra2">
+                    <p>Campo Obrigatorios<span>*</span></p>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
